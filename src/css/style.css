@@ -1,0 +1,218 @@
+body {
+  font-family: "roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #4d869c;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+}
+header nav {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+
+header nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 10px;
+}
+
+header nav ul li a:hover {
+  background-color: #cde8e5;
+  color: black;
+}
+
+main article:first-child {
+  position: relative;
+  margin-top: 70px;
+  padding: 0;
+  height: 50vh;
+  background-image: url("../img/fajriyan-ucRM9jkUqyE-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main article:first-child h1 {
+  text-align: center;
+  padding: 100px;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+}
+
+main article:nth-child(2) {
+  background-color: #cde8e5;
+  padding: 5px;
+  text-align: center;
+}
+h2 {
+  font-size: 2.25rem;
+}
+
+main article:nth-child(2) section {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+}
+
+main article:nth-child(2) section img {
+  margin: 10px;
+}
+main article:nth-child(2) section p {
+  font-size: 1.125rem;
+  text-align: left;
+}
+
+main article:nth-child(3) {
+  background-color: #eef7ff;
+  padding: 10px;
+  text-align: center;
+}
+
+main article:nth-child(3) section:first-child {
+  width: 80%;
+  margin: auto;
+}
+
+main article:nth-child(3) section:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+
+main article:nth-child(3) section:nth-child(2) img {
+  height: 100px;
+  margin: 10px;
+  filter: grayscale(100%);
+}
+
+main article:nth-child(3) section:nth-child(2) img:hover {
+  filter: grayscale(0%);
+}
+
+main article:nth-child(4) {
+  text-align: center;
+  background-color: #cde8e5;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+main article:nth-child(4) p {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+main article:nth-child(4) .slider {
+  margin: auto;
+  width: 60%;
+  height: auto;
+  overflow: hidden;
+}
+
+main article:nth-child(4) .slider img {
+  width: 100%;
+  height: auto;
+}
+
+main article:nth-child(5) {
+  background-color: #eef7ff;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+form label,
+form input,
+form textarea {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #4d869c;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+main aside {
+  position: fixed;
+  inset-block: 0;
+  inset-inline-end: 0;
+}
+
+main aside .social-media {
+  height: 100%;
+  display: flex;
+}
+
+main aside .social-media ul {
+  padding: 1.5rem 1rem;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  margin: auto;
+  background-color: #4d869c;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+main aside .social-media li {
+  list-style-type: none;
+}
+
+main aside .social-media li a .icons {
+  scale: 1.5;
+  transition: all 0.2s ease-in-out;
+}
+
+main aside .social-media li a .icons:hover {
+  scale: 2;
+}
+
+footer {
+  padding: 10px;
+  text-align: center;
+  background-color: #4d869c;
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  main article:first-child h1 {
+    padding: 50px;
+    font-size: 2.5rem;
+  }
+
+  main article:nth-child(2) section {
+    display: block;
+    text-align: center;
+  }
+
+  main article:nth-child(3) section:nth-child(2) {
+    display: block;
+  }
+}
